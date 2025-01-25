@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface ProductRepository extends JpaRepository<ProductsModel, UUID> {
+public interface IProductRepository extends JpaRepository<ProductsModel, UUID> {
     Optional<ProductsModel> findById(java.util.UUID id);
 }
